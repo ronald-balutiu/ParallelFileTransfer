@@ -9,19 +9,27 @@ To use the program, cd into the local directory and type in *python pftpClass.py
 
 In order to see help, type in -h. For the version number, type in -v.
 
-General usage is of the following format: *[-s hostname] [-f file] [options]*.
+General usage is of the following format:
+
+*[-s hostname] [-f file] [options]*.
 
 Options may include:
-[-p port], [-n user], [-P password], [-l logfile]. Note that is no logfile is given, no output will be produced. If you would like to print to console, please do *'-l -'*.
+
+[-p port], [-n user], [-P password], [-l logfile]. 
+
+Note that is no logfile is given, no output will be produced. If you would like to print to console, please do *'-l -'*.
 
 An example of this is: 
+
 *python pftpClass.py -s ftp://mirror.keystealth.org/ -f gnu/ProgramIndex*
 
 If you wish to use a config file, the usage is *[-t config_file] [options]*. Please note that if you wish to use the config file, any options provided will be overrided by the config file information.
 
 To produce a config file, the format is as follows:
+
 *ftp://username:password@servername/file-path*
 
 An example of a two thread applicaiton to download a file (though it is very likely the servers have been taken offline, this was used to grade the project):
+
 *ftp://cs23300:youcandoit@ftp1.cs.uchicago.edu/rfc959.pdf*
 *ftp://socketprogramming:rocks@ftp2.cs.uchicago.edu/rfc959.pdf*
